@@ -1,0 +1,13 @@
+apiVersion: example.upbound.io/v1alpha1
+kind: VM
+metadata:
+  name: test-vm
+spec:
+  parameters:
+    bootDisk:
+      - initializeParams:
+          - image: debian-cloud/debian-11
+    machineType: e2-medium
+    networkInterface:
+      - network: default
+    zone: europe-west3-c
