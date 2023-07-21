@@ -1,7 +1,0 @@
-apiVersion: example.upbound.io/v1alpha1
-kind: Bucket
-metadata: 
-  name: telekom-bucket-2
-spec: 
-  parameters:
-    bucketName: telekom-bucket-2
