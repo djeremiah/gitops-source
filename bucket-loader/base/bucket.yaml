@@ -1,5 +1,0 @@
-apiVersion: example.upbound.io/v1alpha1
-kind: Bucket
-metadata: 
-  name: bucket
-spec: {}
