@@ -41,6 +41,7 @@ spec:
                 secretKeyRef:
                   key: secret-access-key
                   name: aws-credentials
+          image: quay.io/murph830/s3-client-application:v0.3.0
           imagePullPolicy: Always
           ports:
             - containerPort: 8443
