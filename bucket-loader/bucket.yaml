@@ -1,9 +1,9 @@
-apiVersion: example.upbound.io/v1alpha1
+apiVersion: example.atos.net/v1alpha1
 kind: Bucket
 metadata: 
-  name: application-bucket
+  name: atos-bucket
 spec:
   parameters:
-    bucketName: application-bucket
+    bucketName: atos-bucket
   writeConnectionSecretToRef:
     name: bucket-secret
