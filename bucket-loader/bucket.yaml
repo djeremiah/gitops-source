@@ -1,9 +1,9 @@
 apiVersion: example.upbound.io/v1alpha1
 kind: Bucket
 metadata: 
-  name: murph-loader-test
+  name: application-bucket
 spec:
   parameters:
-    bucketName: murph-loader-test
+    bucketName: application-bucket
   writeConnectionSecretToRef:
     name: bucket-secret
