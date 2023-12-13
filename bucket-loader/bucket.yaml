@@ -1,9 +1,9 @@
-apiVersion: example.atos.net/v1alpha1
+apiVersion: example.upbound.net/v1alpha1
 kind: Bucket
 metadata: 
-  name: atos-bucket
+  name: murph-bucket
 spec:
   parameters:
-    bucketName: atos-bucket
+    bucketName: murph-bucket
   writeConnectionSecretToRef:
     name: bucket-secret
