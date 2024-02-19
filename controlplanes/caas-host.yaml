@@ -1,0 +1,19 @@
+apiVersion: spaces.upbound.io/v1beta1
+kind: ControlPlane
+metadata:
+  name: caas-host
+spec:
+  crossplane:
+    autoUpgrade:
+      channel: Rapid
+  source:
+    git:
+      url: https://github.com/djeremiah/gitops-source
+      auth:
+        type: None
+      path: /caas-host
+      pullInterval: 15s
+      ref:
+        branch: main
+  writeConnectionSecretToRef:
+    name: kubeconfig-caas-host
